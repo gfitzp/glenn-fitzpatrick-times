@@ -1,0 +1,368 @@
+/*
+Theme Name: The Glenn Fitzpatrick Times
+Theme URI: http://www.elmastudio.de/wordpress-themes/bugis/
+Description: A Bugis child theme.
+Author: Glenn Fitzpatrick
+Author URI: https://glennfitzpatrick.com
+Version: 1.0
+Tags: three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
+Template: bugis
+
+License: GNU/GPL Version 3 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+@import url("../bugis/style.css");
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+    background-color: #EBEBEB;
+    background-image: url('backgroundtexturetile.jpg');
+}
+
+#secondary img {
+    max-width: 100%;
+}
+
+
+#site-title h2#site-description {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #999999;
+    font-size: 1em;
+}
+
+#content .entry-content a {
+    text-decoration: underline;
+}
+
+#content .entry-content a:hover {
+    text-decoration: none;
+}
+
+#content .post .entry-summery a, #content .entry-meta a.share-btn, #content .entry-meta a.like-btn,.entry-content .page-link a, #content .format-link .entry-content a {
+	background:#F0F0F0;
+}
+
+#content .nocomment {
+	height: 40px;
+}
+
+#content .nocomment a {
+    border-bottom: none !important;
+}
+
+/* reset blockquote styling */
+
+#content blockquote {
+	margin:0;
+}
+#content blockquote p {
+	margin: 0;
+	overflow: visible;
+	font-family: inherit;
+	font-size:medium;
+	line-height:normal;
+	font-style:normal;
+	color:inherit;
+}
+#content blockquote p cite {
+	clear: none;
+	margin:0;
+	font-family:inherit;
+	font-size:medium;
+	font-style:normal;
+	text-transform:none;
+	letter-spacing:normal;
+}
+
+/* new blockquote styling */
+
+#content blockquote {
+    margin: 10px 0 20px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+}
+
+#content blockquote p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#content .twitter-tweet {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#main-nav ul li a {
+	background:	#F0F0F0;
+}
+
+
+.page-link {
+	background: #F0F0F0;
+}
+
+#content pre {
+	background-color: #F0F0F0;
+}
+
+#content .entry-meta ul.post-share {
+	background:#F0F0F0;
+}
+
+#content .post .author-info {
+	background: #F0F0F0;
+}
+
+#comments .comment-header {
+	background:#F0F0F0;
+}
+
+#comments ol li.post.pingback {
+	background:#F0F0F0;
+}
+
+.widget_calendar table#wp-calendar thead tr th {
+	background:#F0F0F0;
+}
+
+ul#smart-archives-block {
+	background:#F0F0F0;
+}
+
+#secondary .widget {
+/* 	color: #0c7f12; */
+}
+
+/* --- Social Links Widget --- */
+.widget_bugis_sociallinks ul.social-links li a {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.3;
+}
+
+.widget_bugis_sociallinks ul.social-links li a:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.widget_bugis_sociallinks ul.social-links li a.behance {
+	background: url(social-icons.png) -1px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.delicious {
+	background: url(social-icons.png) -28px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.deviantart {
+	background: url(social-icons.png) -55px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.digg {
+	background: url(social-icons.png) -82px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.dribbble {
+	background: url(social-icons.png) -109px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.ember {
+	background: url(social-icons.png) -136px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.facebook {
+	background: url(social-icons.png) -163px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.ffffound {
+	background: url(social-icons.png) -190px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.pinterest {
+	background: url(social-icons.png) -379px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.flickr {
+	background: url(social-icons.png) -217px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.foursquare {
+	background: url(social-icons.png) -244px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.gowalla {
+	background: url(social-icons.png) -271px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.grooveshark {
+	background: url(social-icons.png) -298px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.lastfm {
+	background: url(social-icons.png) -1px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.soundcloud {
+	background: url(social-icons.png) -379px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.linkedin {
+	background: url(social-icons.png) -28px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.picasa {
+	background: url(social-icons.png) -55px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.rss {
+	background: url(social-icons.png) -325px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.rsscomments {
+	background: url(social-icons.png) -352px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.slideshare {
+	background: url(social-icons.png) -82px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.squidoo {
+	background: url(social-icons.png) -109px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.tumblr {
+	background: url(social-icons.png) -136px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.twitter {
+	background: url(social-icons.png) -163px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.vimeo {
+	background: url(social-icons.png) -190px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.wordpress {
+	background: url(social-icons.png) -217px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.xing {
+	background: url(social-icons.png) -244px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.youtube {
+	background: url(social-icons.png) -271px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.zootool {
+	background: url(social-icons.png) -298px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.googleplus {
+	background: url(social-icons.png) -325px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.fivehundredpx {
+	background: url(social-icons.png) -352px -28px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.github {
+	background: url(social-icons.png) -406px -1px no-repeat;
+}
+.widget_bugis_sociallinks ul.social-links li a.instagram {
+	background: url(social-icons.png) -406px -28px no-repeat;
+}
+
+
+
+/* FOOTNOTES STYLING
+--------------------------------------------- */
+sup {
+    position: relative;
+    top: -0.2em;
+    font-size: 0.7em;
+}
+
+#content .entry-content sup a {
+    text-decoration: none;
+}
+
+#content .entry-content ol a.backlink {
+    text-decoration: none;
+}
+
+#content .entry-content ol a.backlink:hover {
+    text-decoration: underline;
+}
+
+
+
+/* CSS3 MEDIA QUERIES FOR RESPONSIVE DESIGN
+--------------------------------------------- */
+@media screen and (max-width: 1024px) {
+
+#secondary img {
+    max-width: 100% !important;
+}
+
+#main-nav ul li a {
+	background:	#F0F0F0 !important;
+	color:#777777 !important;
+}
+
+#content .nocomment {
+    margin: 0 30px 0 0 !important;
+    padding: 0;
+}
+
+#content .nocomment a {
+    border-right: none !important;
+}
+
+#content blockquote {
+	margin:0;
+}
+#content blockquote p {
+	margin: 0;
+	overflow: visible;
+	font-family: inherit;
+	font-size:medium;
+	line-height:normal;
+	font-style:normal;
+	color:inherit;
+}
+#content blockquote p cite {
+	clear: none;
+	margin:0;
+	font-family:inherit;
+	font-size:medium;
+	font-style:normal;
+	text-transform:none;
+	letter-spacing:normal;
+}
+
+/* new blockquote styling */
+
+#content blockquote {
+    margin: 10px 0 20px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+}
+
+#content blockquote p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#content .twitter-tweet {
+    width: 82% !important;
+    max-width: 600px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+}
+
+
+/* iphone in portrait mode */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+#content .nocomment {
+    margin: 0 !important;
+    padding: 10px 0 0 0 !important;
+    border-right: none !important;
+}
+
+#content .twitter-tweet {
+    width: 91% !important;
+    max-width: 600px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+}

@@ -1,3 +1,3 @@
 <?php
 
-$content_width = 960; /* pixels */
+$content_width = 1920; /* pixels */

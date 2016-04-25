@@ -1,0 +1,5 @@
+p[style*="visibility: hidden; position: absolute;"] ~ .gglcptch_v1,
+p[style*="visibility: hidden; position: absolute;"] ~ .gglcptch_v2 {
+    visibility: hidden;
+    position: absolute;
+}

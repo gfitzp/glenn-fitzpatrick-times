@@ -6,6 +6,12 @@
 $content_width = 1920; /* pixels */
 
 
+function https_load_fonts() {
+      echo '<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">' . "\n";
+   }
+add_action('wp_head', 'https_load_fonts');
+
+
 /* Hide reCAPTCHA on 2FA login screen */
 
 function my_login_stylesheet() {

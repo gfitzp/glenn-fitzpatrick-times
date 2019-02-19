@@ -4,7 +4,7 @@ Theme URI: http://www.elmastudio.de/wordpress-themes/bugis/
 Description: A Bugis child theme.
 Author: Glenn Fitzpatrick
 Author URI: https://glennfitzpatrick.com
-Version: 1.4
+Version: 1.4.2
 Tags: three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
 Template: bugis
 
@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 @import url("../bugis/style.css");
 
-.size-auto, 
+.size-auto,
 .size-full,
 .size-large,
 .size-medium,
@@ -347,8 +347,8 @@ sup {
 
 
 /* iphone in portrait mode */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 568px)
 and (orientation : portrait) {
 

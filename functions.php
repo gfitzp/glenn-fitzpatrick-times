@@ -25,3 +25,17 @@ add_filter( 'is_protected_meta', function( $protected, $meta_key, $meta_type )
 
     return $protected;
 }, 10, 3 );
+
+
+/* Replace the Bugis search form; searches fail to work due to home_url('url') */
+
+function gf_times_search_form( $form ) {
+
+		$form = '	<form method="get" id="searchform" action="'.home_url().'">
+			<input type="text" class="field" name="s" id="s"  placeholder="'. esc_attr__('Search', 'bugis') .'" />
+			<input type="submit" class="submit" name="submit" id="searchsubmit" value="'. esc_attr__('Search', 'bugis') .'" />
+	</form>';
+
+		return $form;
+}
+add_filter( 'get_search_form', 'gf_times_search_form', 15 );

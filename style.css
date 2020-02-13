@@ -4,7 +4,7 @@ Theme URI: http://www.elmastudio.de/wordpress-themes/bugis/
 Description: A Bugis child theme.
 Author: Glenn Fitzpatrick
 Author URI: https://glennfitzpatrick.com
-Version: 1.5
+Version: 1.6
 Tags: three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
 Template: bugis
 
@@ -32,7 +32,6 @@ body {
     max-width: 100%;
 }
 
-
 #site-title h2#site-description {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #999999;
@@ -57,6 +56,12 @@ body {
 
 #content .nocomment a {
     border-bottom: none !important;
+}
+
+#content .wp-video {
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* reset blockquote styling */

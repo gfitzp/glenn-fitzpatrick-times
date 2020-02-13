@@ -5,7 +5,7 @@
  */
 ?>
 
-<?php if ( ! comments_open() && ! is_page() ) : ?>
+<?php if ( ! comments_open() && get_comments_number() == 0 && ! is_page() ) : ?>
 
 <?php else : ?>
 

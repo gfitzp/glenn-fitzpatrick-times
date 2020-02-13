@@ -10,7 +10,7 @@
 	<?php if (is_sticky()) echo __( '<h2 class="sticky-label">Featured</h2>', 'bugis' ); ?>
 		
 		<!-- hide comments speech bubble link when comments are closed -->
-        <?php if ( ! comments_open() && ! is_page() ) : ?>
+        <?php if ( ! comments_open() && get_comments_number() == 0 && ! is_page() ) : ?>
         
         <div class="post-type nocomment">
 			<a href="<?php the_permalink(); ?>" class="post-format link" title="Permalink"><?php _e('Permalink', 'bugis') ?></a>

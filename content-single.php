@@ -9,7 +9,7 @@
 <div class="entry-wrap">
 
     <!-- hide comments speech bubble link when comments are closed -->
-    <?php if ( ! comments_open() && ! is_page() ) : ?>
+    <?php if ( ! comments_open() && get_comments_number() == 0 && ! is_page() ) : ?>
 
         <div class="post-type nocomment">
             <?php if ( get_post_format() ) : ?>

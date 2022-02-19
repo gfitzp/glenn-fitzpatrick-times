@@ -6,6 +6,14 @@
 $content_width = 1920; /* pixels */
 
 
+/* Self-host the Anton font instead of loading from Google Fonts */
+
+function remove_fonts() {
+	remove_action('wp_print_styles', 'load_fonts');
+}
+add_action('wp_loaded', 'remove_fonts');
+
+
 /* Hide reCAPTCHA on 2FA login screen */
 
 function my_login_stylesheet() {

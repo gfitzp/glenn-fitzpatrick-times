@@ -56,7 +56,7 @@
 			 */
 			if ( ! comments_open() && ! is_page() ) :
 			?>
-			<p class="nocomments"><?php _e( 'Comments are closed.', 'bugis' ); ?></p>
+			<!-- <p class="nocomments"><?php _e( 'Comments are closed.', 'bugis' ); ?></p> -->
 			<?php endif; // end ! comments_open() && ! is_page() ?>
 
 

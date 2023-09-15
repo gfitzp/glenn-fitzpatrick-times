@@ -28,9 +28,12 @@
 
 		<?php endif; ?>
 
-		<header class="entry-header">
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'bugis' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-		</header><!--end entry-header -->
+		<?php if ( trim(get_the_title()) !== '' ): ?>
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'bugis' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+
+			</header><!--end entry-header -->
+		<?php endif; ?>
 
 		<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
 		<div class="entry-summary">

@@ -32,11 +32,30 @@
 
     <?php endif; ?>
 
-		<header class="entry-header">
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'bugis' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-		</header><!--end entry-header -->
+		<?php if ( trim(get_the_title()) !== '' ): ?>
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'bugis' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			</header><!--end entry-header -->
+		<?php endif; ?>
+
+		<?php
+			// Determine how long it's been since this post was published
+			$d1 = new DateTime(get_the_date('Y-m-d'));
+			$d2 = new DateTime(date('Y-m-d'));
+			$diff = $d2->diff($d1);
+			$years = $diff->y;
+
+			$disclaimer = '; my opinions, thoughts, attitude, and writing style may have evolved since then, and this post might have been different if it were to be posted today.'
+		?>
 
 		<div class="entry-content">
+			<?php if ( $years >= 5 ): ?>
+				<div class="disclaimer disclaimer-ancient">This was posted <strong>over <?php echo $years ?> years ago</strong><?php echo $disclaimer ?></div>
+			<?php elseif ( $years > 1 ): ?>
+				<div class="disclaimer disclaimer-old">This was posted <strong>over <?php echo $years ?> years ago</strong><?php echo $disclaimer ?></div>
+			<?php elseif ( $years == 1 ): ?>
+				<div class="disclaimer disclaimer-old">This was posted <strong>over 1 year ago</strong><?php echo $disclaimer ?></div>
+			<?php endif; ?>
 			<?php if ( has_post_thumbnail() ): ?>
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 			<?php endif; ?>

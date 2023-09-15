@@ -4,7 +4,7 @@ Theme URI: http://www.elmastudio.de/wordpress-themes/bugis/
 Description: A Bugis child theme.
 Author: Glenn Fitzpatrick
 Author URI: https://glennfitzpatrick.com
-Version: 1.8
+Version: 1.9
 Tags: three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
 Template: bugis
 
@@ -56,8 +56,28 @@ body {
     text-decoration: none;
 }
 
-#content .post .entry-summery a, #content .entry-meta a.share-btn, #content .entry-meta a.like-btn,.entry-content .page-link a, #content .format-link .entry-content a {
+#content .post .entry-summery a, #content .entry-meta a.share-btn, #content .entry-meta a.like-btn, .entry-content .page-link a, #content .format-link .entry-content a {
 	background:#F0F0F0;
+}
+
+#content .entry-content .disclaimer {
+	font-size: smaller;
+	position: relative;
+	padding: 8px;
+	margin-bottom: 1rem;
+	border-radius: 4px;
+}
+
+#content .entry-content .disclaimer-old {
+	color: #664d03 !important;
+	background-color: #fff3cd;
+	border: 1px solid #ffe69c;
+}
+
+#content .entry-content .disclaimer-ancient {
+	color: #58151c !important;
+	background-color: #f8d7da;
+	border: 1px solid #f1aeb5;
 }
 
 #content .nocomment {
@@ -358,6 +378,26 @@ sup {
     margin-right: 0 !important;
 }
 
+#content .entry-content .disclaimer {
+	font-size: smaller;
+	position: relative;
+	padding: 8px;
+	margin-bottom: 1rem;
+	border-radius: 4px;
+}
+
+#content .entry-content .disclaimer-old {
+	color: #664d03 !important;
+	background-color: #fff3cd;
+	border: 1px solid #ffe69c;
+}
+
+#content .entry-content .disclaimer-ancient {
+	color: #58151c !important;
+	background-color: #f8d7da;
+	border: 1px solid #f1aeb5;
+}
+
 }
 
 
@@ -378,6 +418,26 @@ and (orientation : portrait) {
     max-width: 600px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+}
+
+#content .entry-content .disclaimer {
+	font-size: smaller;
+	position: relative;
+	padding: 8px;
+	margin-bottom: 1rem;
+	border-radius: 4px;
+}
+
+#content .entry-content .disclaimer-old {
+	color: #664d03 !important;
+	background-color: #fff3cd;
+	border: 1px solid #ffe69c;
+}
+
+#content .entry-content .disclaimer-ancient {
+	color: #58151c !important;
+	background-color: #f8d7da;
+	border: 1px solid #f1aeb5;
 }
 
 }

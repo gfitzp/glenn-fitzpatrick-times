@@ -149,6 +149,7 @@ body {
 
 #content pre {
 	background-color: #F0F0F0;
+	overflow: auto;
 }
 
 #content .entry-meta ul.post-share {
